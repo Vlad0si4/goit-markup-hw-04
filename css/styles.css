@@ -307,8 +307,6 @@ background-color: var(--color-iris);
     border-top: none;
   
 }
-
-
 /**
   |============================
   | HERO
@@ -337,9 +335,8 @@ background-color: var(--color-iris);
   font-weight: 700;
   font-size: 56px;
   line-height: calc(60 / 56);
-  
-}
 
+}
 
 /**
   |============================
@@ -376,7 +373,6 @@ background-color: var(--color-iris);
   justify-content: center;
   align-items: center;
 }
-
 
 /**
   |============================
@@ -425,7 +421,6 @@ color: var(--color-navy-blue);
   justify-content: space-between;
   gap: 24px;
 }
-
 /**
   |============================
   |  TEAM
@@ -471,9 +466,7 @@ margin-bottom: 8px;
   padding: 120px 0;
 
 }
-/* .customers-title {
-line-height: 1.1;
-} */
+
 .customers-list {
   display: flex;
   gap: 24px;
@@ -484,9 +477,6 @@ line-height: 1.1;
   width: calc((100% - 120px) / 6);
   height: 88px;
 }
-
-
-
 .customers-link {
   
 display: flex;
@@ -501,7 +491,6 @@ justify-content: center;
   color: var(--color-light-slate);
 
 }
-
 .customers-icon {
   fill: currentColor;
 }
@@ -526,8 +515,6 @@ justify-content: center;
       line-height: 1.17;
       display: inline-block;
       margin-bottom: 16px;
-
-
 }
 .footer-logo .decor {
   color: var(--color-cloud);
@@ -549,7 +536,6 @@ justify-content: center;
   | SOCIAL
   |============================
 */
-
 
 .social-list {
   display: flex;
