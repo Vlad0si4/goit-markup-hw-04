@@ -183,6 +183,16 @@ body {
  .filter-button:focus {
  color: var(--color-white);
 border: 1px solid transparent;
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+ 0px 2px 1px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-item__link:hover,
+.portfolio-item__link:focus{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 /**
   |============================
@@ -234,9 +244,11 @@ background-color: var(--color-iris);
   |============================
 */
 /* FILTERS */
-
 .filters {
   padding: 96px 0 120px;
+}
+.filter-wrapper {
+  padding: 32px 16px;
 }
 
 .filter-list {
@@ -250,6 +262,7 @@ background-color: var(--color-iris);
 }
 
 /*  ROW */
+
 .portfolio-list {
 
   display: flex;
@@ -257,26 +270,31 @@ background-color: var(--color-iris);
   column-gap: 24px;
   row-gap: 48px;
   margin-bottom: 72px;
-
 }
+.portfolio-item {
+  width: calc((100% - 48px) / 3)
+}
+
+.portfolio-item__link {
+  display: block;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+   0px 1px 1px rgba(46, 47, 66, 0.16),
+   0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .portfolio-title {
   margin-bottom: 8px;
 }
 
-.portfolio-item {
-   width: calc((100% - 48px) / 3)
 
 
-}
-.portfolio-item__link {
+.portfolio-item__text {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
   
 }
-.filter-wrapper {
-  padding: 32px 16px;
-}
+
 
 /**
   |============================
@@ -336,7 +354,7 @@ background-color: var(--color-iris);
 .advantage-wrapper {
   display: flex;
   align-items: center;
-justify-content: center;
+  justify-content: center;
   border-radius: 4px;
   margin-bottom: 8px;
   height: 112px;
@@ -432,10 +450,16 @@ margin-bottom: 8px;
 }
 .team-list__item {
   background-color: var(--color-white);
-}
-.team-list__item .pesrson {
-  padding: 32px 16px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+   0px 1px 1px rgba(46, 47, 66, 0.16),
+   0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  
+}
+.team-list__item .person {
+  padding: 32px 0
+
+
 
 }
 
@@ -476,18 +500,31 @@ margin-bottom: 8px;
   display: flex;
   align-items: baseline;
   gap: 120px;
-
 }
+/**
+  |============================
+  | SOCIAL
+  |============================
+*/
+
 
 .social-list {
   display: flex;
   gap: 16px;
-
+}
+.social-list__person {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 }
    
 .social-title {
   color: var(--color-white);
   margin-bottom: 16px;
+
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 .social-link { 
 display: flex;
