@@ -69,7 +69,7 @@ body {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 /**
@@ -388,7 +388,7 @@ color: var(--color-navy-blue);
 
   font-weight: 700;
   font-size: 36px;
-  line-height: calc(40 / 36);
+  line-height: 1.1;
 
   margin-bottom: 72px;
   text-align: center;
